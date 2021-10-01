@@ -1,0 +1,57 @@
+.container_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iptname,
+.iptbirthday,
+.iptemail,
+.iptphone,
+.selectspeciality,
+.ipthour,
+.iptschedule,
+.iptpayment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iptradio {
+    display: flex;
+    flex-direction: row;
+}
+
+.btnradios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.btnsend,
+.iptagree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

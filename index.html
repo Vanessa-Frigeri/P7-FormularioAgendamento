@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/index-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,400;1,100;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container_header">
+            <img src="./image/img002_logo.png" alt="logotipo" class="logotipo">
+            <h1>Agendamento</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container_main">
+            <form class="main_form" action="">
+                <div class="iptname">
+                    <label for="iptname" class="ipttitle">Nome completo</label>
+                    <input type="text" id="iptname" class="iptbox">
+                </div>
+                <div class="iptbirthday">
+                    <label for="iptbirthday" class="ipttitle">Data de Nascimento</label>
+                    <input type="date" id="iptbirthday" class="iptbox">
+                </div>
+                <div class="iptemail">
+                    <label for="iptemail" class="ipttitle">Email</label>
+                    <input type="email" id="iptemail" class="iptbox">
+                </div>
+                <div class="iptphone">
+                    <label for="iptphone" class="ipttitle">Telefone</label>
+                    <input type="tel" id="iptphone" class="iptbox">
+                </div>
+                <div class="selectspeciality">
+                    <label for="selectspeciality" class="ipttitle">Especialidade Desejada</label>
+                    <div id="selectspeciality">
+                        <select class="iptbox">
+                            <option value="0" disabled selected>Selecione a Especialidade</option>
+                            <option value="1">Clínica geral</option>
+                            <option value="2">Odontopediatria</option>
+                            <option value="3">Ortodontia</option>
+                            <option value="4">Odontogeriatria</option>
+                            <option value="5">Endodontia</option>
+                            <option value="6">Periodontia</option>
+                            <option value="7">Buco Maxilo Facial</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="iptschedule">
+                    <label for="iptschedule" class="ipttitle">Data da Consulta</label>
+                    <input type="date" id="iptschedule" class="iptbox" min="2021-09-30">
+                </div>
+                <div class="ipthour">
+                    <label for="ipthour" class="ipttitle">Horário da Consulta</label>
+                    <input type="datetime" id="ipthour" class="iptbox">
+                </div>
+
+                <div class="iptpayment">
+                    <label class="ipttitle" for="iptpayment">Forma de Pagamento</label>
+                    <div class="iptradio" id="iptpayment">
+                        <div class="btnradios">
+                            <div>
+                                <input type="radio" id="iptcredit" name="iptradio">
+                                <label for="iptcredit">Crédito</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="iptdebit" name="iptradio">
+                                <label for="iptdebit">Débito</label>
+                            </div>
+
+                        </div>
+                        <div class="btnradios">
+                            <div>
+                                <input type="radio" id="iptmoney" name="iptradio">
+                                <label for="iptmoney">Dinheiro</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="iptcheck" name="iptradio">
+                                <label for="iptcheck">Cheque</label>
+                            </div>
+                        </div>
+                        <div class="btnradios">
+                            <div>
+                                <input type="radio" id="iptbill" name="iptradio">
+                                <label for="iptbill">Boleto</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="iptpix" name="iptradio">
+                                <label for="iptpix">Pix</label>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="iptagree">
+                    <label class="ipttitle" for="iptagree">Li e concordo com os <a href="#" class="atermsofservice">Termos de Serviço</a></label>
+                    <input type="checkbox" id="iptagree">
+                </div>
+                <div class="btnsend">
+                    <button id="btnsend" type="submit">Agendar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
